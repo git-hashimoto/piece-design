@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ぴーすでざいん</title>
+  <!-- ▼ JS -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+  
+  <!-- ▼ CSS -->
+  <link rel="stylesheet" href="./css/reset.css">
+  <link rel="stylesheet" href="./css/common.css">
+  <link rel="stylesheet" href="./css/subpage.css">
+  <!-- ▼ fonts -->
+  <link rel="stylesheet" href="https://use.typekit.net/gnd8bcm.css">
+  <!-- ▼ ファビコン -->
+  <link rel="icon" type="image/png" sizes="16x16"  href="./images/favicons/favicon.png">
+  <meta name="msapplication-TileColor" content="#ffffff">
+  <meta name="theme-color" content="#ffffff">
+</head>
+<body>
+  <!-- ▼ header -->
+  <header id="header" class="header">
+    <div class="header__inner inner">
+      <h1 class="header__name">
+        <a href="./index.html">
+          <img class="logo" src="./images/logo.svg" alt="ぴーすでざいん">
+        </a>
+      </h1>
+      <nav class="header__nav nav">
+        <ul class="header__nav-items nav__items">
+          <li class="header__nav-item nav__item">
+            <a class="header__nav-link nav__link nav__link--header" href="./index.html#about">私について</a>
+          </li>
+          <li class="header__nav-item nav__item">
+            <a class="header__nav-link nav__link nav__link--header" href="./index.html#about">制作実績</a>
+          </li>
+          <li class="header__nav-item nav__item">
+            <a class="header__nav-link nav__link nav__link--header" href="./index.html#about">スキル</a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+    <div class="hamburger">
+      <span></span>
+    </div>
+    <nav class="header__nav-sp">
+      <ul class="header__nav-items-sp">
+        <li class="header__nav-item-sp">
+          <a class="header__nav-link-sp nav__link" href="./index.html#about">
+            私について
+          </a>
+        </li>
+        <li class="header__nav-item-sp">
+          <a class="header__nav-link-sp nav__link" href="./index.html#works">
+            制作実績
+          </a>
+        </li>
+        <li class="header__nav-item-sp">
+          <a class="header__nav-link-sp nav__link" href="./index.html#skills">
+            スキル
+          </a>
+        </li>
+      </ul>
+    </nav>
+  </header>
+  <!-- ▲ header -->
+  <!-- ▼ main -->
+  <main class="main">
+    <!-- ▼ パンくずリスト -->
+    <div class="breadcrumb-navigation">
+      <div class="breadcrumb-navigation__inner inner">
+        <ol class="breadcrumb" itemscope itemtype="https://schema.org/BreadcrumbList">
+          <!-- 1つめ -->
+          <li itemprop="itemListElement" itemscope
+              itemtype="https://schema.org/ListItem">
+            <a itemprop="item" href="./index.html">
+                <span itemprop="name">トップ</span>
+            </a>
+            <meta itemprop="position" content="1" />
+          </li>
+          <!-- 2つめ -->
+          <li itemprop="itemListElement" itemscope
+              itemtype="https://schema.org/ListItem">
+            <a itemprop="item" href="./list.html">
+                <span itemprop="name">制作実績一覧</span>
+            </a>
+            <meta itemprop="position" content="2" />
+          </li>
+          <!-- 3つめ -->
+          <li itemprop="itemListElement" itemscope
+              itemtype="https://schema.org/ListItem">
+            <a itemprop="item" href="./work1.html">
+                <span itemprop="name">スマホキャンペーン広告バナー</span>
+            </a>
+            <meta itemprop="position" content="3" />
+          </li>
+        </ol>
+      </div>
+    </div>
+    <!-- ▲ パンくずリスト -->
+    <!-- ▼ 制作実績一覧 -->
+    <section class="works-list sub-page">
+      <div class="works-list__inner sub-page__inner inner">
+        <h2 class="heading">
+          WORKS
+          <span class="heading-ja">
+            制作実績
+          </span>
+        </h2>
+        <h3 class="works-detail__title title">
+          スマホキャンペーン広告バナー
+        </h3>
+        <img class="works-detail__img" src="./images/img-work-01.png" alt="">
+        <div class="works-detail__text-contents">
+          <p class="works-detail__text text">
+            スマートフォンのキャンペーン告知を題材に自主制作しました。<br>
+            初めてIllustratorを使用して作成しました。<br>
+            背景はグレーの和紙素材で、描画モードを使用して色付けをしています。<br>
+            桜模様の陰の部分はスウォッチでストライプで作っています。
+          </p>
+          <dl class="detail__list">
+            <dt class="detail__list-title text">種類</dt>
+            <dd class="detail__list-text text">デザイン</dd>
+            <dt class="detail__list-title">期間</dt>
+            <dd class="detail__list-text text">1週間</dd>
+            <dt class="detail__list-title">技術</dt>
+            <dd class="detail__list-text text">Illustrator、Photoshop</dd>
+          </dl>
+        </div>
+        <img class="lower-img" src="./images/campaign-banner.jpg" alt="">
+        <a class="return-btn" href="./list.html">制作実績一覧へもどる</a>
+      </div>
+    </section>
+    <!-- ▲ 制作実績一覧 -->
+  </main>
+  <!-- ▲ main -->
+  <!-- ▼ footer -->
+  <footer class="footer">
+    <div class="footer__inner inner">
+      <div class="footer__contents">
+        <a href="./index.html">
+          <img class="logo" src="./images/logo.svg" alt="ぴーすでざいん">
+        </a>
+        <nav class="nav">
+          <nav class="footer__nav nav">
+            <ul class="footer__nav-items nav__items">
+              <li class="footer__nav-item nav__item">
+                <a class="footer__nav-link nav__link" href="./index.html#about">私について</a>
+              </li>
+              <li class="footer__nav-item nav__item">
+                <a class="footer__nav-link nav__link" href="./index.html#works">制作実績</a>
+              </li>
+              <li class="footer__nav-item nav__item">
+                <a class="footer__nav-link nav__link" href="./index.html#skills">スキル</a>
+              </li>
+            </ul>
+          </nav>
+        </nav>
+      </div>
+      <p class="copyright">
+        Copyright &COPY; 2024  All Rights Reserved.
+      </p>
+    </div>
+    <div class="top-btn">
+      <a class="top-link" href="">
+        <img class="top-btn__img" src="./images/btn-blue.png" alt="PAGE TOP">
+        TOP
+      </a>
+    </div>
+  </footer> 
+  <!-- ▲ footer -->
+  <script src="./js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ぴーすでざいん</title>
+  <!-- ▼ JS -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+  <!-- ▼ slick -->
+  <script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+  <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+  <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css">
+  <!-- ▼ fadein -->
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <!-- ▼ CSS -->
+  <link rel="stylesheet" href="./css/reset.css">
+  <link rel="stylesheet" href="./css/common.css">
+  <link rel="stylesheet" href="./css/top.css">
+  <!-- ▼ fonts -->
+  <link rel="stylesheet" href="https://use.typekit.net/gnd8bcm.css">
+  <!-- ▼ ファビコン -->
+  <link rel="icon" type="image/png" sizes="16x16"  href="./images/favicons/favicon.png">
+  <meta name="msapplication-TileColor" content="#ffffff">
+  <meta name="theme-color" content="#ffffff">
+</head>
+<body>
+  <!-- ▼ header -->
+  <header id="header" class="header">
+    <div class="header__inner inner">
+      <h1 class="header__name">
+        <a href="./index.html">
+          <img class="logo" src="./images/logo.svg" alt="ぴーすでざいん">
+        </a>
+      </h1>
+      <nav class="header__nav nav">
+        <ul class="header__nav-items nav__items">
+          <li class="header__nav-item nav__item">
+            <a class="header__nav-link nav__link nav__link--header" href="#about">私について</a>
+          </li>
+          <li class="header__nav-item nav__item">
+            <a class="header__nav-link nav__link nav__link--header" href="#works">制作実績</a>
+          </li>
+          <li class="header__nav-item nav__item">
+            <a class="header__nav-link nav__link nav__link--header" href="#skills">スキル</a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+    <div class="hamburger">
+      <span></span>
+    </div>
+    <nav class="header__nav-sp">
+      <ul class="header__nav-items-sp">
+        <li class="header__nav-item-sp">
+          <a class="header__nav-link-sp nav__link" href="#about">
+            私について
+          </a>
+        </li>
+        <li class="header__nav-item-sp">
+          <a class="header__nav-link-sp nav__link" href="#works">
+            制作実績
+          </a>
+        </li>
+        <li class="header__nav-item-sp">
+          <a class="header__nav-link-sp nav__link" href="#skills">
+            スキル
+          </a>
+        </li>
+      </ul>
+    </nav>
+  </header>
+  <!-- ▲ header -->
+  <div id="splash">
+    <div id="splash-logo">
+      <p class="loading__text">LOADING...</p>
+      <span class="loading__img"><img src="./images/loading.png" alt="" width="100"></span>
+    </div>
+  </div>
+  <!-- ▼ kv -->
+  <div class="kv">
+    <picture>
+      <source class="kv__img" srcset="./images/mainview-sp.jpg" media="(max-width: 767px)">
+      <img class="kv__img" src="./images/mainview-pc.jpg" alt="パズルを持った人のイラスト">
+    </picture>
+    <p class="kv__text">
+      あなたのイメージに<br>
+      ぴったりハマる<br class="sp">デザインを
+    </p>
+  </div>
+  <!-- ▲ kv -->
+  <!-- ▼ main -->
+  <main class="main">
+    <div class="main-message__contents" data-aos="fade-up">
+      <p class="main-message__text">
+        お客様の考えのピース<br>
+        私の考えのピース<br>
+        たくさんのピースを掛け合わせて<br>
+        <ruby>パズル<rp>(</rp><rt class="text-deco">デザイン</rt><rp>)</rp> </ruby>を完成させる<br>
+        パズルを作るときのようなワクワク感<br>
+        完成したときの喜びを共に<br>
+      </p>
+    </div>
+    <div class="slide__text-item">
+      <div class="slide__inner">
+      </div>
+    </div>
+    <!-- ▼ about -->
+    <section id="about" class="about" data-aos="fade-up">
+      <div class="wrapper">
+        <div class="back back--left"></div>
+        <div class="about__inner inner">
+          <div class="sp__inner sp__inner--right">
+            <h2 class="heading">
+              ABOUT
+              <span class="heading-ja">
+                私について
+              </span>
+            </h2>
+            <div class="about__contents">
+              <img class="about__img" src="./images/img-about.jpeg" alt="">
+              <div class="about-text__contents">
+                <p class="about__text-name text">
+                  橋本　美保
+                </p>
+                <p class="about__text text">
+                  埼玉県出身、埼玉県在住。
+                  これまで接客業、インフラエンジニア、フロントエンドエンジニアを経験し、現在はECサイトのWEB更新作業を担当しております。
+                  前職でデザインカンプを元にWEB制作をしている中で、自分でもデザインを作れるようになりたいと思ったことがきっかけでデザインの勉強を始めました。
+                  お客様の要望を丁寧に汲み取りカタチにしていきたいと考えています。
+                </p>
+                <p class="about__text-like text">
+                  すきなこと
+                </p>
+                <p class="about__text text">
+                  ゲーム、アニメ、マンガ、スポーツ、動物
+                  ねこがすきで今は黒猫を飼っています。毎日たくさんの癒しをもらっています。
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- ▲ about -->
+    <!-- ▼ works -->
+    <section id="works" class="works" data-aos="fade-up">
+      <div class="wrapper">
+        <div class=" back back--right"></div>
+        <div class="works__inner inner">
+          <h2 class="heading sp__inner--left">
+            WORKS
+            <span class="heading-ja">
+              制作実績
+            </span>
+          </h2>
+          <div class="slider__area">
+            <ul class="works__items slider">
+              <li class="works__item">
+                <a class="works__link" href="./work1.html">
+                  <img src="./images/img-work-01.png" alt="スマホキャンペーン広告バナー">
+                </a>
+                <h3 class="works__title sub-heading">
+                  <span class="works__type">
+                    デザイン
+                  </span>
+                  スマホキャンペーン広告バナー
+                </h3>
+              </li>
+              <li class="works__item">
+                <a class="works__link" href="./work2.html">
+                  <img src="./images/img-work-02.png" alt="旅行アプリ広告バナー">
+                </a>
+                <h3 class="works__title sub-heading">
+                  <span class="works__type">
+                    デザイン
+                  </span>
+                  旅行アプリ広告バナー
+                </h3>
+              </li>
+              <li class="works__item">
+                <a class="works__link" href="./work3.html">
+                  <img src="./images/img-work-03.png" alt="ハンバーガー広告バナー">
+                </a>
+                <h3 class="works__title sub-heading">
+                  <span class="works__type">
+                    デザイン
+                  </span>
+                  ハンバーガー広告バナー
+                </h3>
+              </li>
+              <li class="works__item">
+                <a class="works__link" href="./work4.html">
+                  <img src="./images/img-work-04.png" alt="会員制コワーキングLP">
+                </a>
+                <h3 class="works__title sub-heading">
+                  <span class="works__type">
+                    デザイン
+                  </span>
+                  会員制コワーキングLP
+                </h3>
+              </li>
+              <li class="works__item">
+                <a class="works__link" href="./work5.html">
+                  <img src="./images/img-work-05.png" alt="美容院LP">
+                </a>
+                <h3 class="works__title sub-heading">
+                  <span class="works__type">
+                    デザイン
+                  </span>
+                  美容院LP
+                </h3>
+              </li>
+              <li class="works__item">
+                <a class="works__link" href="./work6.html">
+                  <img src="./images/img-work-06.png" alt="カフェWEBサイト">
+                </a>
+                <h3 class="works__title sub-heading">
+                  <span class="works__type">
+                    サイト制作
+                  </span>
+                  カフェWEBサイト
+                </h3>
+              </li>
+              <li class="works__item">
+                <a class="works__link .works__link--top" href="./work7.html">
+                  <img src="./images/img-work-07.png" alt="ポートフォリオサイト">
+                </a>
+                <h3 class="works__title sub-heading">
+                  <span class="works__type">
+                    デザイン/サイト制作
+                  </span>
+                  ポートフォリオサイト
+                </h3>
+              </li>
+            </ul>
+          </div>
+          <div class="view-btn">
+            <a class="view-link" href="./list.html">
+              <img class="view-btn__img" src="./images/btn-orange.png" alt="もっとみるボタン">
+              もっとみる
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- ▲ works -->
+    <!-- ▼ skills -->
+    <section id="skills" class="skills" data-aos="fade-up">
+      <div class="wrapper">
+        <div class=" back back--left"></div>
+        <div class="skills__inner inner">
+          <h2 class="heading">
+            SKILLS
+            <span class="heading-ja">
+              スキル
+            </span>
+          </h2>
+          <div class="skills__icons">
+            <img class="skill-icon" src="./images/icon-photoshop.svg" alt="photoshop">
+            <img class="skill-icon" src="./images/icon-illustrator.svg" alt="illustrator">
+            <img class="skill-icon" src="./images/icon-xd.svg" alt="xd">
+            <img class="skill-icon" src="./images/icon-html.svg" alt="html">
+            <img class="skill-icon" src="./images/icon-css.svg" alt="css">
+            <img class="skill-icon" src="./images/icon-javascript.svg" alt="javascript">
+            <img class="skill-icon" src="./images/icon-jquery.svg" alt="jquery">
+          </div>
+          <div class="skill__puzzle">
+            <div class="skill-text__contents design">
+              <h3 class="sub-heading skill__sub-title">
+                デザイン
+              </h3>
+              <img class="skill__puzzle-icon design-icon" src="./images/icon-design.svg" alt="パレットのアイコン" width="110px" height="123px">
+              <p class="skills__text text">
+                デザインの基礎を習得しており、
+                バナーやLP制作を行っています。
+                見ている人にとって分かりやすく、知りたい情報を明確に伝えられるよう心がけています。
+              </p>
+            </div>
+            <div class="skill-text__contents coding">
+              <h3 class="sub-heading skill__sub-title">
+                コーディング
+              </h3>
+              <img class="skill__puzzle-icon code-icon" src="./images/icon-program.svg" alt="パソコンのアイコン" width="110px" height="123px">
+              <p class="skills__text text">
+                HTML,CSS,Javascript,jQueryを
+                使用した コーディングが可能です。
+                レスポンシブデザイン、アニメーションなどの動きのある
+                コーディングも対応しております。
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- ▲ skills -->
+  </main>
+  <!-- ▲ main -->
+  <!-- ▼ footer -->
+  <footer class="footer">
+    <div class="footer__inner inner">
+      <div class="footer__contents">
+        <a href="./index.html">
+          <img class="logo" src="./images/logo.svg" alt="ぴーすでざいん">
+        </a>
+        <nav class="footer__nav nav">
+          <ul class="footer__nav-items nav__items">
+            <li class="footer__nav-item nav__item">
+              <a class="footer__nav-link nav__link" href="#about">私について</a>
+            </li>
+            <li class="footer__nav-item nav__item">
+              <a class="footer__nav-link nav__link" href="#works">制作実績</a>
+            </li>
+            <li class="footer__nav-item nav__item">
+              <a class="footer__nav-link nav__link" href="#skills">スキル</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+      <p class="copyright">
+        Copyright &COPY; 2024  All Rights Reserved.
+      </p>
+    </div>
+    <div class="top-btn">
+      <a class="top-link" href="">
+        <img class="top-btn__img" src="./images/btn-blue.png" alt="PAGE TOP">
+        TOP
+      </a>
+    </div>
+  </footer>
+  <!-- ▲ footer -->
+  <!-- ▼ JS -->
+  <script src="./js/main.js"></script>
+</body>
+</html>
