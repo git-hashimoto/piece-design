@@ -1,12 +1,12 @@
 @charset "utf-8";
 html {
   overflow-x: hidden;
-  font-family: 'sans-serif','Noto Sans JP';
 }
 
 body {
   /* タップ時強調色なくすため */
   -webkit-tap-highlight-color: transparent;
+  font-family: 'sans-serif','Noto Sans JP';
 }
 
 /* ----------------------
