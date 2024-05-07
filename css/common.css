@@ -6,7 +6,7 @@ html {
 body {
   /* タップ時強調色なくすため */
   -webkit-tap-highlight-color: transparent;
-  font-family: 'Noto Sans JP','sans-serif';
+  font-family: 'Noto Sans JP',sans-serif;
 }
 
 /* ----------------------
