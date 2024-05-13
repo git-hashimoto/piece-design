@@ -283,7 +283,7 @@ body {
 
 /* トップにもどるボタン */
 .top-btn {
-  /* display: none; */
+  display: none;
   position: fixed;
   right: 20px;
   bottom: 50px;
