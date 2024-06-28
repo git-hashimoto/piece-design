@@ -1,0 +1,238 @@
+@charset "utf-8";
+.main {
+  padding-top: 100px;
+}
+
+.header {
+  background-color: #f9f3ed;
+}
+
+/* ----------------------
+      パンくずリスト
+---------------------- */
+.breadcrumb {
+  margin: 0;
+  padding: 0;
+}
+
+.breadcrumb li {
+  display: inline;/*横に並ぶように*/
+}
+
+.breadcrumb li:after {/* >を表示*/
+  content: '>';
+  padding: 0 0.2em;
+}
+
+.breadcrumb li:last-child:after {
+  content: '';
+}
+
+/* ----------------------
+          共通
+---------------------- */
+.sub-page__inner {
+  margin-top: 85px;
+}
+
+/* ----------------------
+      制作実績一覧
+---------------------- */
+.works-list__items {
+  display: flex;
+  flex-wrap: wrap;
+  column-gap: 4%;
+  row-gap: 70px;
+  margin-top: 70px;
+}
+
+.works-list__item {
+  width: 48%;
+}
+
+.works-list__link {
+  /* width: 525px; */
+}
+
+/* ----------------------
+      制作実績詳細
+---------------------- */
+.works-detail__title {
+  max-width: 850px;
+  font-size: 30px;
+  letter-spacing: 0.05em;
+  line-height: 1.47;
+  margin: 0 auto;
+  margin-top: 50px;
+}
+
+.works-detail__img {
+  max-width: 850px;
+  margin: 0 auto;
+  margin-top: 40px;
+}
+
+.works-detail__text-contents {
+  max-width: 790px;
+  margin: 0 auto;
+  margin-top: 40px;
+}
+
+.link__wrapper {
+  font-size: 20px;
+  font-weight: bold;
+  margin-bottom: 30px;
+}
+
+.detail__list {
+  max-width: 500px;
+  display:flex;
+  /* align-items: center; */
+  flex-wrap: wrap;
+  margin-top: 30px;
+}
+
+.detail__list-title,
+.detail__list-text {
+  padding: 6px 0;
+}
+
+.detail__list-title {
+  width: 25%;
+  font-weight: bold;
+}
+
+.detail__list-text {
+  width: 75%;
+  margin-left: 0;
+}
+
+dt,dd {
+  line-height: 1.7;
+}
+
+.lower-img__wrapper {
+  display: flex;
+}
+
+.lower-img {
+  max-width: 700px;
+  margin: 0 auto;
+  margin-top: 100px;
+}
+
+.lower-img--pc {
+  max-width: 600px;
+}
+
+.lower-img--sp {
+  max-width: 375px;
+}
+
+.return-btn {
+  display: block;
+  width: 350px;
+  background: #286699;
+  border-radius: 15px;
+  color: #fff;
+  font-size: 18px;
+  font-weight: bold;
+  text-align: center;
+  margin: 0 auto;
+  margin-top: 120px;
+  padding: 20px 0;
+}
+
+@media screen and (max-width: 1000px) {
+  .lower-img--sp {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .sp {
+    display: block;
+  }
+
+  .pc {
+    display: none;
+  }
+
+  .main {
+    padding-top: 80px;
+  }
+
+  .sub-page__inner {
+    margin-top: 30px;
+  }
+
+  .breadcrumb-navigation {
+    font-size: 12px;
+  }
+
+  .works-list__items {
+    margin-top: 55px;
+  }
+
+  .works-list__item {
+    width: 100%;;
+  }
+
+  .works-list__link {
+    /* width: 335px; */
+  }
+
+  .works-detail__title {
+    font-size: 20px;
+  }
+
+  .works-detail__img,
+  .works-detail__text-contents {
+    margin-top: 30px;
+  }
+
+  .works-detail__text-contents {
+    padding: 0 15px;
+  }
+
+  .detail__list {
+    margin-top: 20px;
+  }
+
+  .lower-img {
+    margin-top: 60px;
+  }
+
+  .lower-img--sp {
+    display: block;
+  }
+
+  .return-btn{
+    width: 250px;
+    font-size: 14px;
+    margin-top: 70px;
+    padding: 20px 0;
+  }
+}
+
+
+/* WOEKS8 */
+.works-detail__sub-title {
+  font-size: 20px;
+}
+
+.feature__img {
+  margin-top: 30px;
+}
+
+.feature__item {
+  margin-top: 60px;
+}
+
+.feature__text {
+  margin-top: 10px;
+}
+
+.origin-text {
+  margin-top: 15px;
+}
