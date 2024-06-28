@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ぴーすでざいん</title>
+  <!-- ▼ JS -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+  <!-- ▼ fadein -->
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <!-- ▼ CSS -->
+  <link rel="stylesheet" href="./css/reset.css">
+  <link rel="stylesheet" href="./css/common.css">
+  <link rel="stylesheet" href="./css/subpage.css">
+  <!-- ▼ fonts -->
+  <link rel="stylesheet" href="https://use.typekit.net/gnd8bcm.css">
+  <!-- ▼ ファビコン -->
+  <link rel="icon" type="image/png" sizes="16x16"  href="./images/favicons/favicon.png">
+  <meta name="msapplication-TileColor" content="#ffffff">
+  <meta name="theme-color" content="#ffffff">
+</head>
+<body>
+  <!-- ▼ header -->
+  <header id="header" class="header">
+    <div class="header__inner inner">
+      <h1 class="header__name">
+        <a href="./index.html">
+          <img class="logo" src="./images/logo.svg" alt="ぴーすでざいん">
+        </a>
+      </h1>
+      <nav class="header__nav nav">
+        <ul class="header__nav-items nav__items">
+          <li class="header__nav-item nav__item">
+            <a class="header__nav-link nav__link nav__link--header" href="./index.html#about">私について</a>
+          </li>
+          <li class="header__nav-item nav__item">
+            <a class="header__nav-link nav__link nav__link--header" href="./index.html#about">制作実績</a>
+          </li>
+          <li class="header__nav-item nav__item">
+            <a class="header__nav-link nav__link nav__link--header" href="./index.html#about">スキル</a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+    <div class="hamburger">
+      <span></span>
+    </div>
+    <nav class="header__nav-sp">
+      <ul class="header__nav-items-sp">
+        <li class="header__nav-item-sp">
+          <a class="header__nav-link-sp nav__link" href="./index.html#about">
+            私について
+          </a>
+        </li>
+        <li class="header__nav-item-sp">
+          <a class="header__nav-link-sp nav__link" href="./index.html#works">
+            制作実績
+          </a>
+        </li>
+        <li class="header__nav-item-sp">
+          <a class="header__nav-link-sp nav__link" href="./index.html#skills">
+            スキル
+          </a>
+        </li>
+      </ul>
+    </nav>
+  </header>
+  <!-- ▲ header -->
+  <!-- ▼ main -->
+  <main class="main">
+    <!-- ▼ パンくずリスト -->
+    <div class="breadcrumb-navigation">
+      <div class="breadcrumb-navigation__inner inner">
+        <ol class="breadcrumb" itemscope itemtype="https://schema.org/BreadcrumbList">
+          <!-- 1つめ -->
+          <li itemprop="itemListElement" itemscope
+              itemtype="https://schema.org/ListItem">
+            <a itemprop="item" href="./index.html">
+                <span itemprop="name">トップ</span>
+            </a>
+            <meta itemprop="position" content="1" />
+          </li>
+          <!-- 2つめ -->
+          <li itemprop="itemListElement" itemscope
+              itemtype="https://schema.org/ListItem">
+            <a itemprop="item" href="./list.html">
+                <span itemprop="name">制作実績一覧</span>
+            </a>
+            <meta itemprop="position" content="2" />
+          </li>
+          <!-- 3つめ -->
+          <li itemprop="itemListElement" itemscope
+              itemtype="https://schema.org/ListItem">
+            <a itemprop="item" href="./work1.html">
+                <span itemprop="name">WEBサービス 【MonteMe】</span>
+            </a>
+            <meta itemprop="position" content="3" />
+          </li>
+        </ol>
+      </div>
+    </div>
+    <!-- ▲ パンくずリスト -->
+    <!-- ▼ 制作実績一覧 -->
+    <section class="works-list sub-page">
+      <div class="works-list__inner sub-page__inner inner">
+        <h2 class="heading">
+          WORKS
+          <span class="heading-ja">
+            制作実績
+          </span>
+        </h2>
+        <h3 class="works-detail__title title">
+          「山」×「人」のマッチング 【MonteMe】
+        </h3>
+        <img class="works-detail__img" src="./images/img-work-08.png" alt="">
+        <div class="works-detail__text-contents">
+          <div class="link__wrapper">
+            <a href="https://animach.site/" target="_blank">URL: https://animach.site/</a>
+          </div>
+          <p class="works-detail__text text">
+            山登りを始める方へ診断を元におすすめの山を紹介する <br>
+            「山」×「人」のマッチングWEBサービスです。<br>
+            下記、テストユーザーをご利用いただくとサービスをお試しいただけます。<br>
+            【テストユーザー】<br>
+            メールアドレス：test@gmail.com<br>
+            パスワード：test0000<br>
+            <br>
+            【背景】<br>
+            はじめて山登りをする際に、ネットに登山に関する情報が多くあるため<br>
+            自分に適した山が分からない、探すのが難しいという意見を元に<br>
+            診断からおすすめの山を紹介するマッチングサービスの制作に至りました。<br>
+            診断の他にレベル別一覧や、実際山に登った方の初心者おすすめ度の評価なども取り入れ<br>
+            山登りをはじめるきっかけになればという思いも込めています。<br>
+            レスポンシブはスマホ、PCサイズで対応しています。
+          </p>
+          <dl class="detail__list">
+            <dt class="detail__list-title text">種類</dt>
+            <dd class="detail__list-text text">WEBサービス</dd>
+            <dt class="detail__list-title">期間</dt>
+            <dd class="detail__list-text text">1ヶ月</dd>
+            <dt class="detail__list-title">技術</dt>
+            <dd class="detail__list-text text">HTML、CSS、Vue.js、JavaScript、Laravel</dd>
+            <dt class="detail__list-title">機能</dt>
+            <dd class="detail__list-text text">
+              ログイン、ログアウト<br>
+              ユーザー新規登録、編集機能<br>
+              パスワード変更機能<br>
+              診断機能<br>
+              地図登録機能<br>
+              お気に入り機能<br>
+              お問い合わせ機能
+            </dd>
+            <dt class="detail__list-title">作業担当ページ</dt>
+            <dd class="detail__list-text text">
+              ログイン(機能含む)<br>
+              新規登録(機能含む)<br>
+              山を探す<br>
+              レベル一覧<br>
+              山登りレビュー
+            </dd>
+          </dl>
+        </div>
+        <div class="works-detail__text-contents">
+          <p class="works-detail__sub-title">
+            MonteMe【特徴３つ】
+          </p>
+          <img class="feature__img" src="./images/img-work-08-1.png" alt="">
+          <ul class="feature__items">
+            <li class="feature__item">
+              <h3 class="feature__title title">
+                1 山診断
+              </h3>
+              <p class="feature__text text">
+                診断を元にあなたにおすすめの山をご紹介します。
+              </p>
+              <img class="feature__img" src="./images/img-work-08-2.png" alt="">
+            </li>
+            <li class="feature__item">
+              <h3 class="feature__title title">
+                2 マイ地図作成
+              </h3>
+              <p class="feature__text text">
+                自分が登った山を登録することで自分だけの地図が作れます。<br>
+                地図にピンが立っていくので達成感も感じられます。
+              </p>
+              <img class="feature__img" src="./images/img-work-08-3.png" alt="">
+            </li>
+            <li class="feature__item">
+              <h3 class="feature__title title">
+                3 山レビュー
+              </h3>
+              <p class="feature__text text">
+                自分の記録用、実際に登った方の初心者おすすめ度が一目で確認できます。
+              </p>
+              <img class="feature__img" src="./images/img-work-08-4.png" alt="">
+              <p class="feature__text text">
+                投稿者の情報も確認できるため、レビューを投稿している方の登山歴や登山数
+                山登りをはじめたきっかけなどを知ることもできます。
+              </p>
+            </li>
+          </ul>
+          <div class="works-detail__text-contents">
+            <p class="works-detail__sub-title ">
+              サービス名の由来
+            </p>
+            <p class="works-detail__text origin-text text">
+              Monte・・・イタリア語で「山」<br>
+              Me・・・Meetの「会う」とMeの「私」をかけあわせています。<br>
+              コンセプトの「山と出会う。山と私」によく合うネーミングだと思います。<br>
+              ロゴやデザイン、トップのイラストもチームの方が一から作ってくれました。<br>
+              【今後の課題】<br>
+              ・はじめて利用する方が分かるようにチュートリアルを入れる<br>
+              ・100名山以外の山も登録できるようにする<br>
+              ・アンケートを実施し有識者の情報を集めたい
+            </p>
+          </div>
+        </div>
+        <!-- <img class="lower-img" src="./images/.jpg" alt=""> -->
+        <a class="return-btn" href="./list.html">制作実績一覧へもどる</a>
+      </div>
+    </section>
+    <!-- ▲ 制作実績一覧 -->
+  </main>
+  <!-- ▲ main -->
+  <!-- ▼ footer -->
+  <footer class="footer">
+    <div class="footer__inner inner">
+      <div class="footer__contents">
+        <a href="./index.html">
+          <img class="logo" src="./images/logo.svg" alt="ぴーすでざいん">
+        </a>
+        <nav class="nav">
+          <nav class="footer__nav nav">
+            <ul class="footer__nav-items nav__items">
+              <li class="footer__nav-item nav__item">
+                <a class="footer__nav-link nav__link" href="./index.html#about">私について</a>
+              </li>
+              <li class="footer__nav-item nav__item">
+                <a class="footer__nav-link nav__link" href="./index.html#works">制作実績</a>
+              </li>
+              <li class="footer__nav-item nav__item">
+                <a class="footer__nav-link nav__link" href="./index.html#skills">スキル</a>
+              </li>
+            </ul>
+          </nav>
+        </nav>
+      </div>
+      <p class="copyright">
+        Copyright &COPY; 2024  All Rights Reserved.
+      </p>
+    </div>
+    <div class="top-btn">
+      <a class="top-link" href="">
+        <img class="top-btn__img" src="./images/btn-blue.png" alt="PAGE TOP">
+        TOP
+      </a>
+    </div>
+  </footer> 
+  <!-- ▲ footer -->
+  <script src="./js/main.js"></script>
+</body>
+</html>
