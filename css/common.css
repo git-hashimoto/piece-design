@@ -342,6 +342,10 @@ body {
   .top-btn__img {
     width: 60px;
   }
+
+  .note {
+    display: block;
+  }
 }
 
 /* ----------------------
