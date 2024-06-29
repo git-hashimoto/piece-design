@@ -143,6 +143,23 @@ dt,dd {
   padding: 20px 0;
 }
 
+.column {
+  display: flex;
+  justify-content: space-between;
+}
+
+.adjust-img__wrapper--end {
+  align-self: flex-end;
+}
+
+.modal-img__text,
+.description__text {
+  font-size: 20px;
+  text-align: center;
+}
+
+
+
 @media screen and (max-width: 1000px) {
   .lower-img--sp {
     display: none;
@@ -212,6 +229,15 @@ dt,dd {
     font-size: 14px;
     margin-top: 70px;
     padding: 20px 0;
+  }
+
+  .column {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .modal-img__text {
+    margin-top: 50px;
   }
 }
 
