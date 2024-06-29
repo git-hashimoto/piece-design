@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ぴーすでざいん</title>
+  <!-- ▼ JS -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+  <!-- ▼ fadein -->
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <!-- ▼ CSS -->
+  <link rel="stylesheet" href="./css/reset.css">
+  <link rel="stylesheet" href="./css/common.css">
+  <link rel="stylesheet" href="./css/subpage.css">
+  <!-- ▼ fonts -->
+  <link rel="stylesheet" href="https://use.typekit.net/gnd8bcm.css">
+  <!-- ▼ ファビコン -->
+  <link rel="icon" type="image/png" sizes="16x16"  href="./images/favicons/favicon.png">
+  <meta name="msapplication-TileColor" content="#ffffff">
+  <meta name="theme-color" content="#ffffff">
+</head>
+<body>
+  <!-- ▼ header -->
+  <header id="header" class="header">
+    <div class="header__inner inner">
+      <h1 class="header__name">
+        <a href="./index.html">
+          <img class="logo" src="./images/logo.svg" alt="ぴーすでざいん">
+        </a>
+      </h1>
+      <nav class="header__nav nav">
+        <ul class="header__nav-items nav__items">
+          <li class="header__nav-item nav__item">
+            <a class="header__nav-link nav__link nav__link--header" href="./index.html#about">私について</a>
+          </li>
+          <li class="header__nav-item nav__item">
+            <a class="header__nav-link nav__link nav__link--header" href="./index.html#about">制作実績</a>
+          </li>
+          <li class="header__nav-item nav__item">
+            <a class="header__nav-link nav__link nav__link--header" href="./index.html#about">スキル</a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+    <div class="hamburger">
+      <span></span>
+    </div>
+    <nav class="header__nav-sp">
+      <ul class="header__nav-items-sp">
+        <li class="header__nav-item-sp">
+          <a class="header__nav-link-sp nav__link" href="./index.html#about">
+            私について
+          </a>
+        </li>
+        <li class="header__nav-item-sp">
+          <a class="header__nav-link-sp nav__link" href="./index.html#works">
+            制作実績
+          </a>
+        </li>
+        <li class="header__nav-item-sp">
+          <a class="header__nav-link-sp nav__link" href="./index.html#skills">
+            スキル
+          </a>
+        </li>
+      </ul>
+    </nav>
+  </header>
+  <!-- ▲ header -->
+  <!-- ▼ main -->
+  <main class="main">
+    <!-- ▼ パンくずリスト -->
+    <div class="breadcrumb-navigation">
+      <div class="breadcrumb-navigation__inner inner">
+        <ol class="breadcrumb" itemscope itemtype="https://schema.org/BreadcrumbList">
+          <!-- 1つめ -->
+          <li itemprop="itemListElement" itemscope
+              itemtype="https://schema.org/ListItem">
+            <a itemprop="item" href="./index.html">
+                <span itemprop="name">トップ</span>
+            </a>
+            <meta itemprop="position" content="1" />
+          </li>
+          <!-- 2つめ -->
+          <li itemprop="itemListElement" itemscope
+              itemtype="https://schema.org/ListItem">
+            <a itemprop="item" href="./list.html">
+                <span itemprop="name">制作実績一覧</span>
+            </a>
+            <meta itemprop="position" content="2" />
+          </li>
+          <!-- 3つめ -->
+          <li itemprop="itemListElement" itemscope
+              itemtype="https://schema.org/ListItem">
+            <a itemprop="item" href="./work1.html">
+                <span itemprop="name">WEBサービス 断捨離記録</span>
+            </a>
+            <meta itemprop="position" content="3" />
+          </li>
+        </ol>
+      </div>
+    </div>
+    <!-- ▲ パンくずリスト -->
+    <!-- ▼ 制作実績一覧 -->
+    <section class="works-list sub-page">
+      <div class="works-list__inner sub-page__inner inner">
+        <h2 class="heading">
+          WORKS
+          <span class="heading-ja">
+            制作実績
+          </span>
+        </h2>
+        <h3 class="works-detail__title title">
+          WEBサービス 断捨離記録
+          <span class="note">※現状はデザインカンプのみ</span>
+        </h3>
+        <img class="works-detail__img" src="./images/img-work-09.png" alt="">
+        <div class="works-detail__text-contents">
+          <!-- <div class="link__wrapper">
+            <a href="" target="_blank">URL: </a>
+          </div> -->
+          <p class="mt-10 text">
+            断捨離の記録用WEBサービスのデザインをIllustratorで作成しました。 <br>
+            現在機能実装中になります。
+          </p>
+          <dl class="detail__list">
+            <dt class="detail__list-title text">種類</dt>
+            <dd class="detail__list-text text">デザイン</dd>
+            <dt class="detail__list-title">期間</dt>
+            <dd class="detail__list-text text">約4時間</dd>
+            <dt class="detail__list-title">技術</dt>
+            <dd class="detail__list-text text">Illustrator、Photoshop</dd>
+          </dl>
+        </div>
+        <div class="works-detail__text-contents">
+          <h4 class="works-detail__sub-title">
+            【なぜつくろうと思ったのか】
+          </h4>
+          <p class="mt-10 text">
+            私自身断捨離をしていて、断捨離した物の写真、日付、フリマなどで売れた金額を記録して一括で管理できるサービスをつくりたいと思い今回の制作にいたりました。<br>
+            ページ遷移や操作が複雑だと記録するのが億劫になりユーザーが離れてしまうと思ったため、<br>
+            必要最低限の機能とSPAで実装、手軽に使用できるよう会員登録は不要にしようと考えています。
+          </p>
+          <h4 class="works-detail__sub-title mt-30">
+            【現状】
+          </h4>
+          <p class="mt-10 text">
+            ①断捨離した写真を断捨離用のフォルダで別管理している<br>
+            ②日付の記録が取れないため写真にテキストを入れたりしている<br>
+            ③フリマアプリで売れた金額の一覧はあるが累計金額が確認できなかったため、<br>
+            自分で計算する必要がある
+          </p>
+          <h4 class="works-detail__sub-title mt-30">
+            【解決策】
+          </h4>
+          <p class="mt-10 text">
+            ①②カレンダーで日付を選択し、写真を保存する<br>
+            ③入力した金額を合算するプログラムをつくる<br>
+            <br>
+            【入れたい機能】<br>
+            ・カレンダー機能<br>
+            ・カウンター機能<br>
+            ・計算機能<br>
+            ・スタンプ機能<br>
+            <br>
+            SNS等で1日1捨てチャレンジしている人を見るため、カレンダーでスタンプ機能があるとひと目で分かるため、やる気が起きそうと思いました。<br>
+            (毎日運動したらカレンダーにスタンプを押すチャレンジをしている人を見たため参考にしました)
+          </p>
+          <h4 class="works-detail__sub-title mt-30">
+            【デザインカンプ】
+          </h4>
+          <div class="column">
+            <img class="mt-30" src="./images/img-work-09-1.png" alt="" style="max-width: 375px;">
+            <div class="adjust-img__wrapper--end">
+              <p class="modal-img__text">モーダル表示</p>
+              <img class="modal-img mt-10" src="./images/img-work-09-2.png" alt="" style="max-width: 375px;">
+            </div>
+          </div>
+          <h4 class="works-detail__sub-title mt-50">
+            【画面操作手順】
+          </h4>
+          <div class="column">
+            <div class="adjust-img__wrapper mt-30">
+              <p class="description__text">画面1</p>
+              <img class="mt-10" src="./images/img-work-09-3.jpg" alt="" style="max-width: 250px;">
+            </div>
+            <div class="adjust-img__wrapper mt-30">
+              <p class="description__text">画面2</p>
+              <img class="mt-10" src="./images/img-work-09-4.jpg" alt="" style="max-width: 237px;">
+            </div>
+            <div class="adjust-img__wrapper mt-30">
+              <p class="description__text">画面3</p>
+              <img class="mt-10" src="./images/img-work-09-5.jpg" alt="" style="max-width: 250px;">
+            </div>
+          </div>
+          <p class="mt-30 text">
+            １．画面1で日付をタップすると画面2が表示される<br>
+            ２．画面2で入力項目や画像等を選択<br>
+            　　入力項目、選択項目(任意)<br>
+            　　① 捨てた数<br>
+            　　② 売った数<br>
+            　　③ 売上金額<br>
+            　　④ 画像選択　(選択した画像は×ボタンで取り消し可能)<br>
+            　　⑤ スタンプ機能<br>
+            ３．⑥ 保存ボタンをタップ<br>
+            ４．画面2の入力内容を元に画面1に<br>
+            　　アイコンが反映される<br>
+            ５．画面2で入力した全日程の内容を合算してカウント数、売上金額を表示<br>
+            　　① 捨てた数の合計値<br>
+            　　② 売った数の合計値<br>
+            　　③ 売上金額の合計値<br>
+            <br>
+            選択した画像についてはプレビュー表示(ダミー画像箇所)<br>
+            ×ボタンで削除が可能です。<br>
+            枚数制限をして横スクロールで表示できるようにしたいと思っています。<br>
+            一度保存した記録についてもカレンダーの日付をタップすることで編集ができます。<br>
+            画面2の削除ボタンで対象の日付の内容を<br>
+            一括削除できるようにしています。
+          </p>
+          <h4 class="works-detail__sub-title mt-30">
+            【今後の課題】
+          </h4>
+          <p class="mt-10 text">
+            現在、vue.jsで機能を実装しています。
+            カレンダーはFullcalendarのプラグインを使用し、ローカルストレージに入力した内容や、画像を保存するようにしていますが、1度保存するとすべての日付に連動してしまい実装が滞っています。<br>
+            調べながら制作を進めようと思います。<br>
+            また、サービス名、ロゴ、LPも作成しようと考えています。
+          </p>
+        </div>
+        <div class="works-detail__text-contents">
+          <h4 class="works-detail__sub-title mt-30">
+            【備考】
+          </h4>
+          <p class="mt-10 text">
+            上記のデザインカンプは修正したものになります。<br>
+            スクールを受講する前に作成していたものが下記になります。<br>
+            余白感、文字の強弱、色、フォント全体的に見直しました。
+          </p>
+          <img class="mt-30" src="./images/img-work-09-6.png" alt="" style="max-width: 538px;">
+        </div>
+        <a class="return-btn" href="./list.html">制作実績一覧へもどる</a>
+      </div>
+    </section>
+    <!-- ▲ 制作実績一覧 -->
+  </main>
+  <!-- ▲ main -->
+  <!-- ▼ footer -->
+  <footer class="footer">
+    <div class="footer__inner inner">
+      <div class="footer__contents">
+        <a href="./index.html">
+          <img class="logo" src="./images/logo.svg" alt="ぴーすでざいん">
+        </a>
+        <nav class="nav">
+          <nav class="footer__nav nav">
+            <ul class="footer__nav-items nav__items">
+              <li class="footer__nav-item nav__item">
+                <a class="footer__nav-link nav__link" href="./index.html#about">私について</a>
+              </li>
+              <li class="footer__nav-item nav__item">
+                <a class="footer__nav-link nav__link" href="./index.html#works">制作実績</a>
+              </li>
+              <li class="footer__nav-item nav__item">
+                <a class="footer__nav-link nav__link" href="./index.html#skills">スキル</a>
+              </li>
+            </ul>
+          </nav>
+        </nav>
+      </div>
+      <p class="copyright">
+        Copyright &COPY; 2024  All Rights Reserved.
+      </p>
+    </div>
+    <div class="top-btn">
+      <a class="top-link" href="">
+        <img class="top-btn__img" src="./images/btn-blue.png" alt="PAGE TOP">
+        TOP
+      </a>
+    </div>
+  </footer> 
+  <!-- ▲ footer -->
+  <script src="./js/main.js"></script>
+</body>
+</html>
